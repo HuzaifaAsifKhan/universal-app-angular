@@ -14,7 +14,7 @@
     "config:backend": "tsc --project tsconfig.backend.json",
     "dev:ssr": "ng run my-universal-app:serve-ssr",
     "serve:ssr": "node dist/my-universal-app/server/main.js",
-    "build:ssr": "ng build && ng run my-universal-app:server",
+    "build:ssr": "ng build --configuration production && ng run my-universal-app:server",
     "prerender": "ng run my-universal-app:prerender"
   },
   "private": true,
