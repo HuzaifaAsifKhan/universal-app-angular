@@ -6,7 +6,7 @@
     "start": "npm run serve:ssr",
     "start:dev": "ng serve",
     "start:backend": "node dist/backend/backend.js",
-    "build": "nom run build:ssr",
+    "build": "npm run build:ssr",
     "build:dev": "ng build",
     "build:backend": "ng build --configuration production && npm run config:backend",
     "watch": "ng build --watch --configuration development",
