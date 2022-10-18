@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SeoService } from '../seo.service';
 
 @Component({
   selector: 'app-products-list',

@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { I18nService } from '../i18n.service';
+import { ProductsService } from '../products.service';
+import { UserService } from '../user.service';
 
 @Component({
   selector: 'app-product-details',
@@ -7,7 +11,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductDetailsComponent implements OnInit {
 
-  constructor() { }
+  public userCurrency: string = this.i18n.getCurrencyCode();
+
+  constructor(
+    private route: ActivatedRoute,
+    private ps: ProductsService,
+    private us: UserService,
+    private i18n: I18nService
+  ) { }
 
   ngOnInit(): void {
   }
